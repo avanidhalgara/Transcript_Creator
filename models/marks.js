@@ -44,6 +44,12 @@ module.exports = function(sequelize, DataTypes) {
 
     },
 
+    graduatedStatus: {
+      field:"graduateStatus",
+      type: DataTypes.BOOLEAN,
+      allownull:false
+    }
+    
 
     
 

@@ -16,7 +16,7 @@ app.use(express.static("public"));
 //  require("./routes/api-routes.js")(app)=============================================================
 require("./routes/api_routes.js")(app)
 require("./routes/mark_api_routes.js")(app)
-
+require("./routes/class_api_routes")(app)
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: false }).then(function() {

@@ -40,7 +40,23 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allownull:false
 
+    },
+
+    enrollStatus: {
+        field: 'enrollstatus',
+        type: DataTypes.BOOLEAN,
+        alownull:false
+        
+    },
+
+    enrollYear:{
+        field:'enrollYear',
+        type: DataTypes.INTEGER,
+        allownull:false 
+
+
     }
+
 
     
 
@@ -50,8 +66,14 @@ Student.associate = function(models) {
     
     Student.hasMany(models.Marks, {
       onDelete: "cascade"
+
     });
+    Student.belongsTo(models.Class, {
+        onDelete: "cascade"
+      });
   };
+  
+    
 return Student;
 }
   
