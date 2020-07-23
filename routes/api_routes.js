@@ -12,6 +12,7 @@ module.exports = function(app) {
       
   })
   // create student info with name, last name, first name etc.
+  //Email address
   app.post("/api/student", function(req, res) {
     console.log(req.body);
     
