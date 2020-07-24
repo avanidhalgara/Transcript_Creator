@@ -2,15 +2,7 @@
 
 module.exports = function(sequelize, DataTypes) {
     var Student = sequelize.define("Student", {
-      // Giving the Student model an id
-    //   id: {
-    //     field:'studentId',
-    //     type: DataTypes.INTEGER,
-    //     autoIncrement: true,
-    //     primaryKey: true,
-    //     allownull:false
-        
-    //     },
+      
     firstname:{
         field:'firstName',
         type: DataTypes.STRING,
