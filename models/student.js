@@ -14,38 +14,67 @@ module.exports = function(sequelize, DataTypes) {
     firstname:{
         field:'firstName',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:" First Name is required"
+            }
+        },
+        len:{
+            args:[2,10],
+            msg:" First Name must be between 2 and 10 characters"
+        }
+        
 
     },
     lastname:{
         field:'lastName',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:" Last Name is required"
+            }
+        },
+        len:{
+            args:[2,10],
+            msg:" Last Name must be between 2 and 10 characters"
+        }
+
 
     },
-    parentname:{
-        field:'ParentName',
-        type: DataTypes.STRING,
-        allownull:false
-
-    },
+    
     emailaddress:{
         field:'emailAddress',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:"Email address is required"
+            }
+        }
 
     },
     classLevel:{
         field:'classLevel',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:"Class level is required"
+            }
+        }
 
     },
 
     enrollStatus: {
         field: 'enrollstatus',
-        type: DataTypes.BOOLEAN,
-        alownull:false
+        type: DataTypes.STRING,
+        allownull:false
         
     },
 
