@@ -47,15 +47,14 @@ module.exports = function(app) {
         .catch(err=>res.json(err))
       
   }) 
-  // not working
+  // uodating marks for students. crete api update route for grades
   app.put('/api/update/:id', function (req, res) {
-    console.log(req.body.English);
-    console.log(req.body.Maths);
-    console.log(req.params.id);
-
+   
     db.Marks.update({
         english: req.body.English,
-        maths:req.body.Maths
+        maths:req.body.Maths,
+        science:req.body.Science,
+        social:req.body.Social        
     }, {
         where: {
             StudentId: req.params.id
