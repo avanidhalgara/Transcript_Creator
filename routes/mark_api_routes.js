@@ -44,6 +44,25 @@ module.exports = function(app) {
         .catch(err=>res.json(err))
       
   }) 
-   
-  
+  // not working
+  app.put('/api/update/:id', function (req, res) {
+    console.log(req.body.English);
+    console.log(req.body.Maths);
+    console.log(req.params.id);
+
+    db.Marks.update({
+        english: req.body.English,
+        maths:req.body.Maths
+    }, {
+        where: {
+            StudentId: req.params.id
+        },
+        include:[{
+          model: db.Student
+        }]
+    }).then(function (result) {
+        res.json(result);
+    });
+});
+     
 }
