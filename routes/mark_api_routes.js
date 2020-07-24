@@ -12,12 +12,13 @@ module.exports = function(app) {
     where: {
        StudentId: req.params.id
       },
-        include: [{
-        model: db.Student
-    }]}).then(function(response) {
-       // console.log(response);
-        res.send({response});
+    include: [db.Student]
+  }).then(function(response) {
+       console.log(response);
+        //res.send({response});
+        res.json(response)
       }).catch(function(err){
+        res.error(err)
         // console.log('Oops! something went wrong, : ', err);
       });
       

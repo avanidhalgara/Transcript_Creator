@@ -93,7 +93,7 @@ module.exports = function(sequelize, DataTypes) {
 Student.associate = function(models) {
     // Associating student with Marks
     
-    Student.hasMany(models.Marks, {
+    Student.hasOne(models.Marks, {
       onDelete: "cascade"
 
     });
