@@ -50,13 +50,13 @@ module.exports = function(sequelize, DataTypes) {
         }
 
     },
-    // // classId:{
-    // //     field:'classId',
-    // //     type: DataTypes.INTEGER,
-    // //     allownull:false,
+    classLevel:{
+        field:'classLevel',
+        type: DataTypes.INTEGER,
+        allownull:false,
         
 
-    // },
+    },
 
     enrollStatus: {
         field: 'enrollstatus',
@@ -69,9 +69,23 @@ module.exports = function(sequelize, DataTypes) {
         field:'enrollYear',
         type: DataTypes.INTEGER,
         allownull:false 
+        
+    },
 
+    phoneNumber:{
+        field:'phoneNumber',
+        type: DataTypes.STRING,
+        allownull:false 
+        
+    },
 
-    }
+    address:{
+        field:'address',
+        type: DataTypes.STRING,
+        allownull:false 
+        
+    },
+
 
 
     
@@ -84,9 +98,7 @@ Student.associate = function(models) {
       onDelete: "cascade"
 
     });
-    Student.belongsTo(models.Class, {
-        onDelete: "cascade"
-      });
+    
   };
   
     
