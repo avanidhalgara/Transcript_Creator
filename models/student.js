@@ -58,18 +58,13 @@ module.exports = function(sequelize, DataTypes) {
         }
 
     },
-    classLevel:{
-        field:'classLevel',
-        type: DataTypes.STRING,
-        allownull:false,
-        validate:{
-            notEmpty:{
-                args:true,
-                msg:"Class level is required"
-            }
-        }
+    // // classId:{
+    // //     field:'classId',
+    // //     type: DataTypes.INTEGER,
+    // //     allownull:false,
+        
 
-    },
+    // },
 
     enrollStatus: {
         field: 'enrollstatus',
@@ -93,7 +88,7 @@ module.exports = function(sequelize, DataTypes) {
 Student.associate = function(models) {
     // Associating student with Marks
     
-    Student.hasOne(models.Marks, {
+    Student.hasMany(models.Marks, {
       onDelete: "cascade"
 
     });

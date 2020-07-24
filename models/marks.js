@@ -30,26 +30,27 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.DECIMAL,
         allownull:false
 
-    },
-    average:{
-        field:'Average',
-        type: DataTypes.DECIMAL,
-        allownull:false
-
-    },
-    grades:{
-        field:'Grades',
-        type: DataTypes.CHAR,
-        allownull:false
-
-    },
-
-    graduatedStatus: {
-      field:"graduateStatus",
-      type: DataTypes.BOOLEAN,
-      allownull:false
     }
-    
+    // average:{
+    //     field:'Average',
+    //     type: DataTypes.DECIMAL,
+    //     allownull:false
+
+    // },
+    // grades:{
+    //     field:'Grades',
+    //     type: DataTypes.CHAR,
+    //     allownull:false
+
+    // },
+
+    // graduatedStatus: {
+    //   field:"graduateStatus",
+    //   type: DataTypes.BOOLEAN,
+    //   allownull:false
+    // }
+    // 
+  
 
     
 
