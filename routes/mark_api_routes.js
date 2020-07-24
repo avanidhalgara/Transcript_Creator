@@ -7,7 +7,7 @@ module.exports = function(app) {
   // display marks for perticular student
   app.get("/api/marks/:id", function(req, res) {
     // console.log(req.params.id);
-   db.Marks.findOne({
+   db.Marks.findAll({
      
     where: {
        StudentId: req.params.id
@@ -16,6 +16,8 @@ module.exports = function(app) {
   }).then(function(response) {
        console.log(response);
         //res.send({response});
+
+        //do calculation for av and grade
         res.json(response)
       }).catch(function(err){
         res.error(err)

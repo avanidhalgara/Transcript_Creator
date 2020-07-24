@@ -9,32 +9,32 @@ module.exports = function(sequelize, DataTypes) {
     //     allownull:false
         
     //     },
-    grade1:{
-        field:'grade1',
+    classOne:{
+        
         type: DataTypes.STRING,
         allownull:false
 
     },
-    grade2:{
-        field:'grade2',
+    classTwo:{
+        
         type: DataTypes.STRING,
         allownull:false
 
     },
-    grade3:{
-        field:'grade3',
+    
+    classThree:{
+        
+        type: DataTypes.STRING,
+        allownull:false
+    },
+    classFour:{
+        
         type: DataTypes.STRING,
         allownull:false
 
     },
-    grade4:{
-        field:'grade4',
-        type: DataTypes.STRING,
-        allownull:false
-
-    },
-    grade5:{
-        field:'grade5',
+    classFive:{
+        
         type: DataTypes.STRING,
         allownull:false
 
