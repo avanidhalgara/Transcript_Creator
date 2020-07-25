@@ -33,7 +33,7 @@ module.exports = function(app) {
          model: db.Student
      }]}).then(function(response) {
         //  console.log(response);
-         res.send({response});
+         res.send(response);
        }).catch(function(err){
         //  console.log('Oops! something went wrong, : ', err);
        });
