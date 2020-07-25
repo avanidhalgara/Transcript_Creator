@@ -1,4 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
+  // created fields for marks table
     var Marks = sequelize.define("Marks", {
       
 

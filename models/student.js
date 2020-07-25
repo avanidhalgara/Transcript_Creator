@@ -1,6 +1,7 @@
 
 
 module.exports = function(sequelize, DataTypes) {
+    // created fields for student table
     var Student = sequelize.define("Student", {
       
     firstname:{
