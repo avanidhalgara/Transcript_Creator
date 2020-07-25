@@ -1,11 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
     var Marks = sequelize.define("Marks", {
-      // Giving the Student model an id
-    //   id: {
-    //     field:'MarksId',
-    //     type: DataTypes.INTEGER,
-    //     primaryKey: true
-    // },
+      
 
     english:{
         field:'English',
@@ -30,13 +25,17 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.DECIMAL,
         allownull:false
 
-    }
-    // average:{
-    //     field:'Average',
-    //     type: DataTypes.DECIMAL,
-    //     allownull:false
-
-    // },
+    },
+    average:{
+        field:'Average',
+        type: DataTypes.VIRTUAL,
+       get(){
+         return (this.maths+this.science+this.social+this.english)/4
+       },
+       set(){
+         throw new Error("Do not try to set the average value!")
+       }
+    },
     // grades:{
     //     field:'Grades',
     //     type: DataTypes.CHAR,
