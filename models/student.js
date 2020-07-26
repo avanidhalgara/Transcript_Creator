@@ -38,6 +38,23 @@ module.exports = function(sequelize, DataTypes) {
 
 
     },
+    parentname:{
+        field:'parentName',
+        type: DataTypes.STRING,
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:" Parent Name is required"
+            }
+        },
+        len:{
+            args:[2,10],
+            msg:" Parent name must be between 2 and 10 characters"
+        }
+
+
+    },    
     
     emailaddress:{
         field:'emailAddress',
@@ -53,7 +70,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     classLevel:{
         field:'classLevel',
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allownull:false,
         
 
@@ -79,7 +96,7 @@ module.exports = function(sequelize, DataTypes) {
         allownull:false 
         
     },
-
+    
     address:{
         field:'address',
         type: DataTypes.STRING,
