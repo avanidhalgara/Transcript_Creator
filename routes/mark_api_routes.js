@@ -66,5 +66,29 @@ module.exports = function(app) {
         res.json(result);
     });
 });
-     
+// app.put('/api/update/:firstName/:lastName', function (req, res) {
+   
+//       db.Marks.update({
+//           english: req.body.English,
+//           maths:req.body.Maths,
+//           science:req.body.Science,
+//           social:req.body.Social        
+//       }, {
+//           where: {
+//               firstname:req.params.firstname,
+//               lastname:req.params.lastname
+//           },
+//           include:[{
+//             model: db.Student
+//           }]
+//         }).then(function(response) {
+//           console.log(response);
+//            //res.send({response});
+   
+//            //do calculation for av and grade
+//            res.json(response)
+//          }).catch(function(err){
+//            res.error(err)
+//          })
+//         })
 }

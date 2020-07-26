@@ -1,3 +1,5 @@
+
+
 // when user clicks add-btn
 $("#add-btn").on("click", function(event) {
     event.preventDefault();
@@ -8,6 +10,8 @@ $("#add-btn").on("click", function(event) {
       firstname: $("#first-name").val().trim(),
       // last name from lastName input
       lastname: $("#last-name").val().trim(),
+      //  parent name from parentName input
+      parentName: $("#parent-name").val().trim(),
       // email address from emailAddress input
       emailaddress: $("#email-address").val().trim(),
       // class level frol classLevel input
@@ -17,7 +21,7 @@ $("#add-btn").on("click", function(event) {
         // enroll year form enrollYear input
       enrollYear: $("#enroll-year").val().trim(),
         // phone number from phoneNumber input
-      phoneNumber: $("#phone-number").val().trim(),
+      phoneNumber: $("#phone-number").val().trim(),      
     //   address from address input
      address: $("#address").val().trim()
 
@@ -36,12 +40,14 @@ $("#add-btn").on("click", function(event) {
     // empty each input box by replacing the value with an empty string
     $("#first-name").val("");
     $("#last-name").val("");
+    $("#parent-name").val("");    
     $("#email-address").val("");
     $("#class-level").val("");
     $("#enroll-status").val("");
     $("#enroll-year").val("");
-    $("#phone-number").val("");
+    $("#phone-number").val("");    
     $("#address").val("");
   
   });
+
   

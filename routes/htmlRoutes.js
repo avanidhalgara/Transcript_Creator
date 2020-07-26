@@ -22,6 +22,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/adminAdd.html"));
   });
 
+  app.get("/all", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/adminView.html"));
+  });
+
 //   // blog route loads blog.html
 //   app.get("/adminUpdate", function(req, res) {
 //     res.sendFile(path.join(__dirname, "../public/update.html"));
