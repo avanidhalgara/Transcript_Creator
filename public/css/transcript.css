@@ -1,0 +1,48 @@
+      .jumbotron {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      margin-bottom: 0;
+      background-color: #fff;
+    }
+      
+      
+      .container
+      {
+       border-radius: 20px;
+       border-style: double;
+       border-color: black;
+       position: absolute;
+       width: 850px;
+       height: 755px;
+       top: 15px;
+       left: 45px;
+       padding: 30px 30px 50px 30px;
+       background-color:papayawhip;
+      }
+      #tbl,#tbl2
+      {
+      border-collapse:collapse;
+      font-size:18;
+      font-family:Century Gothic;
+      }
+      .demo
+      {
+      position:absolute;
+      left:35px;
+      top:380px;
+      font-size:17;
+      font-family:Arial;
+      font-weight:bold;
+      margin-top:35px;
+      border-collapse:collapse;
+      }
+      #demoname
+      {
+      font-size:15px
+      }
+      .btn
+      {
+      position:absolute;
+      top:355px;
+      left:720px;
+      }

@@ -74,3 +74,18 @@ color: white;
 background: #007bb5;
 color: white;
 }
+
+.container1
+{
+  border-radius: 20px;
+       border-style: double;
+       border-color: black;
+       /* position: absolute; */
+       width: 850px;
+       height: 755px;
+       top: 15px;
+       left: 45px; 
+       padding: 30px 30px 50px 30px; 
+       background-color:papayawhip;
+
+}
