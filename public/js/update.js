@@ -71,6 +71,7 @@ $("#add-btn").on("click", function(event) {
         console.log(data);
         // tell the user we're adding a character with an alert window
         alert("update Student marks");
+        location.reload()
       });
     });
 
