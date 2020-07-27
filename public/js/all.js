@@ -15,15 +15,20 @@ function runTableQuery() {
 
           // Then display the fields in the HTML (Section Name, Date, URL)
           var listItem = $("<li class='list-group-item mt-4'>");
+          var student=studentData[i]
+          
 
           listItem.append(
             $("<button class=btn btn-link collapsed >").text("View marks for ID-" + (studentData[i].id)).on("click",function(event){
                 event.preventDefault();
+                console.log(student)
+                console.log("working")
                // var url="/adminUpdate.html?id=" + encodeURIComponent(studentData[i].id)
               // var id=studentData[i].id;
                
                
-                window.location.href = "/adminUpdate.html?id="+1
+                window.location.href = "/adminUpdate.html?id="+student.id
+
             }),
             
             // $("<hr>"),
