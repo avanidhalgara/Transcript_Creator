@@ -7,17 +7,20 @@ module.exports = function(app) {
   // display marks for perticular student
   app.get("/api/marks/:id", function(req, res) {
     // console.log(req.params.id);
-   db.Marks.findOne({
+   db.Marks.findAll({
      
     where: {
        StudentId: req.params.id
       },
-        include: [{
-        model: db.Student
-    }]}).then(function(response) {
-       // console.log(response);
-        res.send({response});
+    include: [db.Student]
+  }).then(function(response) {
+       console.log(response);
+        //res.send({response});
+
+        //do calculation for av and grade
+        res.json(response)
       }).catch(function(err){
+        res.error(err)
         // console.log('Oops! something went wrong, : ', err);
       });
       
@@ -30,7 +33,7 @@ module.exports = function(app) {
          model: db.Student
      }]}).then(function(response) {
         //  console.log(response);
-         res.send({response});
+         res.send(response);
        }).catch(function(err){
         //  console.log('Oops! something went wrong, : ', err);
        });
@@ -44,6 +47,48 @@ module.exports = function(app) {
         .catch(err=>res.json(err))
       
   }) 
+  // uodating marks for students. crete api update route for grades
+  app.put('/api/update/:id', function (req, res) {
    
-  
+    db.Marks.update({
+        english: req.body.English,
+        maths:req.body.Maths,
+        science:req.body.Science,
+        social:req.body.Social        
+    }, {
+        where: {
+            StudentId: req.params.id
+        },
+        include:[{
+          model: db.Student
+        }]
+    }).then(function (result) {
+        res.json(result);
+    });
+});
+// app.put('/api/update/:firstName/:lastName', function (req, res) {
+   
+//       db.Marks.update({
+//           english: req.body.English,
+//           maths:req.body.Maths,
+//           science:req.body.Science,
+//           social:req.body.Social        
+//       }, {
+//           where: {
+//               firstname:req.params.firstname,
+//               lastname:req.params.lastname
+//           },
+//           include:[{
+//             model: db.Student
+//           }]
+//         }).then(function(response) {
+//           console.log(response);
+//            //res.send({response});
+   
+//            //do calculation for av and grade
+//            res.json(response)
+//          }).catch(function(err){
+//            res.error(err)
+//          })
+//         })
 }

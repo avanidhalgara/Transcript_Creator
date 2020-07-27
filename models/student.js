@@ -1,51 +1,85 @@
 
 
 module.exports = function(sequelize, DataTypes) {
+    // created fields for student table
     var Student = sequelize.define("Student", {
-      // Giving the Student model an id
-    //   id: {
-    //     field:'studentId',
-    //     type: DataTypes.INTEGER,
-    //     autoIncrement: true,
-    //     primaryKey: true,
-    //     allownull:false
-        
-    //     },
+      
     firstname:{
         field:'firstName',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:" First Name is required"
+            }
+        },
+        len:{
+            args:[2,10],
+            msg:" First Name must be between 2 and 10 characters"
+        }
+        
 
     },
     lastname:{
         field:'lastName',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:" Last Name is required"
+            }
+        },
+        len:{
+            args:[2,10],
+            msg:" Last Name must be between 2 and 10 characters"
+        }
+
 
     },
     parentname:{
-        field:'ParentName',
+        field:'parentName',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:" Parent Name is required"
+            }
+        },
+        len:{
+            args:[2,10],
+            msg:" Parent name must be between 2 and 10 characters"
+        }
 
-    },
+
+    },    
+    
     emailaddress:{
         field:'emailAddress',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        validate:{
+            notEmpty:{
+                args:true,
+                msg:"Email address is required"
+            }
+        }
 
     },
     classLevel:{
         field:'classLevel',
         type: DataTypes.STRING,
-        allownull:false
+        allownull:false,
+        
 
     },
 
     enrollStatus: {
         field: 'enrollstatus',
-        type: DataTypes.BOOLEAN,
-        alownull:false
+        type: DataTypes.STRING,
+        allownull:false
         
     },
 
@@ -53,9 +87,23 @@ module.exports = function(sequelize, DataTypes) {
         field:'enrollYear',
         type: DataTypes.INTEGER,
         allownull:false 
+        
+    },
 
+    phoneNumber:{
+        field:'phoneNumber',
+        type: DataTypes.STRING,
+        allownull:false 
+        
+    },
+    
+    address:{
+        field:'address',
+        type: DataTypes.STRING,
+        allownull:false 
+        
+    },
 
-    }
 
 
     
@@ -68,9 +116,7 @@ Student.associate = function(models) {
       onDelete: "cascade"
 
     });
-    Student.belongsTo(models.Class, {
-        onDelete: "cascade"
-      });
+    
   };
   
     
