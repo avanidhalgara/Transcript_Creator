@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 function runTableQuery() {
     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
     $.ajax({ url: "/api/student", method: "GET" })
@@ -98,4 +96,3 @@ function runTableQuery() {
 //   runWaitListQuery();
 
 
->>>>>>> 978744a8249b1a0edb749c497581cb282d87ad27

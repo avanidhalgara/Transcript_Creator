@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 978744a8249b1a0edb749c497581cb282d87ad27
 function runTableQuery() {
     var queryString = new Array();
 var data;
@@ -17,11 +13,7 @@ var data;
         }
     }
     if (queryString["id"] != null) {
-<<<<<<< HEAD
-
-=======
        
->>>>>>> 978744a8249b1a0edb749c497581cb282d87ad27
         // data += "<b>Name:</b> " + queryString["id"]
        data=queryString["id"];
        console.log(data);
@@ -39,19 +31,11 @@ var data;
         $('#science').val(marks[0].science);
         $('#social').val(marks[0].social);
         $('#average').val(marks[0].average);
-<<<<<<< HEAD
-
-
-
-
-
-=======
       
 
    
    
     
->>>>>>> 978744a8249b1a0edb749c497581cb282d87ad27
   });
 
 
@@ -71,19 +55,11 @@ $("#add-btn").on("click", function(event) {
       // class level frol classLevel input
     //   average: $("#average").val().trim()
         // enroll status from enrollStatus input
-<<<<<<< HEAD
-
-
-    }
-
-
-=======
     
 
     }
 
    
->>>>>>> 978744a8249b1a0edb749c497581cb282d87ad27
   console.log(newStudent+"new student")
     // send an AJAX POST-request with jQuery
     $.post("/api/update/"+data, newStudent)
@@ -95,16 +71,7 @@ $("#add-btn").on("click", function(event) {
         alert("update Student marks");
       });
     });
-<<<<<<< HEAD
 
     }
 
   runTableQuery();
-=======
-    
-    }
-
-  runTableQuery();
-
-
->>>>>>> 978744a8249b1a0edb749c497581cb282d87ad27
