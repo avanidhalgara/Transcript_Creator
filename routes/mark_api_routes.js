@@ -48,7 +48,7 @@ module.exports = function(app) {
       
   }) 
   // uodating marks for students. crete api update route for grades
-  app.put('/api/update/:id', function (req, res) {
+  app.post('/api/update/:id', function (req, res) {
    
     db.Marks.update({
         english: req.body.English,
