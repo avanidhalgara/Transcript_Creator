@@ -19,10 +19,12 @@ var data;
        console.log(data);
         // $("#lblData").html(data);
     }
+    console.log(data)
 
     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
     $.ajax({ url: "/api/marks/"+data, method: "GET" })
       .then(function(marks) {
+        console.log(marks)
 
         // Here we then log the tableData to console, where it will show up as an object.
         console.log(marks[0].maths);
