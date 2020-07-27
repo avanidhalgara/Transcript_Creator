@@ -44,18 +44,8 @@ function runTableQuery() {
       });
   }
 
-//   function runWaitListQuery() {
 
-//     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-//     $.ajax({ url: "/api/waitlist", method: "GET" })
-//       .then(function(waitData) {
 
-//         // Here we then log the waitlistData to console, where it will show up as an object.
-//         console.log(waitData);
-//         console.log("------------------------------------");
-
-//         // Loop through and display each of the customers
-//         for (var i = 0; i < waitData.length; i++) {
 
 //           // Get a reference to the waitList element and populate it with tables
 //           var waitList = $("#waitList");
