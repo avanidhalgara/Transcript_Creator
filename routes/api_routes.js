@@ -48,16 +48,7 @@ module.exports = function(app) {
       
   })
 
-  // app.delete("/api/student/:id", function(req, res) {
-  //   db.Student.destroy({
-  //     where: {
-  //       id:req.params.id
-        
-  //     }
-  //   })
-  //   .then(results=>res.json(results)) 
-  //   .catch(err=>res.json(err))
-  // });
+  
    
   
 }
