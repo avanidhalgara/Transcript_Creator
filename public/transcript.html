@@ -68,7 +68,7 @@
         <a class="navbar-brand">Enter Student ID</a>
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" id="student-id" placeholder="Student ID" aria-label="Search">
-          <a href="home.html"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Create</button></a>
+          <a href="home.html"> <button class="btn btn-outline-success my-2 my-sm-0" id="btn-create" type="submit">Create</button></a>
         </form>
       </nav>
       
@@ -105,12 +105,12 @@
                 <table id="tbl1">
                 <form name="form1">
                  <tr>
-                  <td>First Name:</td><td><input type="text" name="firstname" /> </td>
-                  <td>&nbsp; &nbsp; Last Name:</td><td><input type="text" name="lastname" /></td>
+                  <td>First Name:</td><td><input type="text" id="firstname" /> </td>
+                  <td>&nbsp; &nbsp; Last Name:</td><td><input type="text" id="lastname" /></td>
                  </tr>
                  <tr>
-                  <td>Class Level:</td><td><input type="text" name="classlevel" /></td>
-                  <td>&nbsp; &nbsp; Enroll Year:</td><td><input type="numb" name="enrollyear" /></td>
+                  <td>Class Level:</td><td><input type="text" id="classlevel" /></td>
+                  <td>&nbsp; &nbsp; Enroll Year:</td><td><input type="numb" id="enrollyear" /></td>
                  </tr>
                 </table>
                </fieldset>
@@ -120,19 +120,19 @@
                  <legend>Subject Remarks</legend>
                  <table height="232" id="tbl2">
                   <tr>
-                   <td width="140">Maths</td><td><input type="text" name="maths" maxlength="2" size="10" />
+                   <td width="140">Maths</td><td><input type="text" id="maths" maxlength="2" size="10" />
                    &nbsp; Out of 100</td>
                   </tr>
                   <tr>
-                   <td width="140">English</td><td><input type="text" name="english" size="10" maxlength="2" />
+                   <td width="140">English</td><td><input type="text" id="english" size="10" maxlength="2" />
                    &nbsp; Out of 100</td>
                   </tr>
                   <tr>
-                   <td width="140">Science</td><td><input type="text" name="science" maxlength="2" size="10" />
+                   <td width="140">Science</td><td><input type="text" id="science" maxlength="2" size="10" />
                    &nbsp; Out of 100</td>
                   </tr>
                   <tr>
-                   <td width="140">Social</td><td><input type="text" name="social" maxlength="2"  size="10" />
+                   <td width="140">Social</td><td><input type="text" id="social" maxlength="2"  size="10" />
                    &nbsp; Out of 100
                    </td>
                   </tr>
@@ -146,7 +146,7 @@
                   <TH colspan="8" width="240"> Marks Result </TH>
                   </TR>
                   <TR>
-                  <TD width="135">TOTAL:</TD><TD> <input type="text" name="total" maxlength="2"  size="10" />
+                  <TD width="135">TOTAL:</TD><TD> <input type="text" id="total" maxlength="2"  size="10" />
                   </TR>
                   <!-- <TR>
                   <TD width="135">Average:</TD><TD><FONT face="arial" id="demoper"></FONT></TD>
@@ -154,10 +154,10 @@
                   <TR>
                   <TD width="135">Grade:</TD><TD><FONT face="arial" id="demograde"></FONT></TD>
                   </TR> -->
-                  <TD width="135">AVERAGE:</TD><TD> <input type="text" name="average" maxlength="2"  size="10" />
+                  <TD width="135">AVERAGE:</TD><TD> <input type="text" id="average" maxlength="2"  size="10" />
                   </TR>
 
-                  <TD width="135">GRADE:</TD><TD> <input type="text" name="grade" maxlength="2"  size="10" />
+                  <TD width="135">GRADE:</TD><TD> <input type="text" id="grade" maxlength="2"  size="10" />
                   </TR>
                   </TABLE>
                   </DIV>
@@ -186,7 +186,8 @@
     <p>Intrested? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.</p>
   </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery.js"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script></body>
 
       <script src="js/transcript.js" type="text/javascript"></script>
