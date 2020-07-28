@@ -33,15 +33,15 @@ function runStudentQuery() {
             
             // $("<hr>"),
             // $("<h2>").text("ID: " + studentData[i].studentId),
-            $("<h1>").text("First Name: " + studentData[i].firstname),
-            $("<h1>").text("Last Name: " + studentData[i].lastname),
-            $("<h1>").text("Parent Name: " + studentData[i].parentName),
-            $("<h1>").text("Email Address: " + studentData[i].emailaddress),
-            $("<h1>").text("Class Level: " + studentData[i].classLevel),
-            $("<h1>").text("Enroll Status: " + studentData[i].enrollStatus),
-            $("<h1>").text("Enroll Year: " + studentData[i].enrollYear),
-            $("<h1>").text("Phone Number: " + studentData[i].phoneNumber),
-            $("<h1>").text("Address: " + studentData[i].address)
+            $("<h1>").addClass("font-size").text("First Name: " + studentData[i].firstname),
+            $("<h1>").addClass("font-size").text("Last Name: " + studentData[i].lastname),
+            $("<h1>").addClass("font-size").text("Parent Name: " + studentData[i].parentname),
+            $("<h1>").addClass("font-size").text("Email Address: " + studentData[i].emailaddress),
+            $("<h1>").addClass("font-size").text("Class Level: " + studentData[i].classLevel),
+            $("<h1>").addClass("font-size").text("Enroll Status: " + studentData[i].enrollStatus),
+            $("<h1>").addClass("font-size").text("Enroll Year: " + studentData[i].enrollYear),
+            $("<h1>").addClass("font-size").text("Phone Number: " + studentData[i].phoneNumber),
+            $("<h1>").addClass("font-size").text("Address: " + studentData[i].address)
           );
 
           studentList.append(listItem);
