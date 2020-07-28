@@ -35,6 +35,7 @@ $("#add-btn").on("click", function(event) {
         console.log(data);
         // tell the user we're adding a character with an alert window
         alert("Adding Student...");
+        window.location.href ="/adminUpdate.html?id="+data.StudentId
       });
   
     // empty each input box by replacing the value with an empty string
