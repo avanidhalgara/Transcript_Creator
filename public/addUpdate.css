@@ -57,3 +57,9 @@ text-shadow: 1px 1px rgb(235, 232, 232);
 background-color: #8ec2b1;
     text-shadow: 2px 1px rgb(235, 232, 232);
 }
+/* giving colors to the homecontact navbar */
+.btn1-all{
+    color:#03045e;
+    text-shadow: 2px 1px rgb(235, 232, 232);
+  }
+  
