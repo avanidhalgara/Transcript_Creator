@@ -89,3 +89,17 @@ color: white;
        background-color:papayawhip;
 
 }
+
+#text-01 {
+  color:#03045e;
+    text-shadow: 3px 3px rgb(235, 232, 232);
+}
+
+.label-colour {
+  color:#03045e;
+}
+
+.buttonS {
+  
+  background-color: #8ec2b1;
+}
