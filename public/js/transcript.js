@@ -32,14 +32,26 @@ display()
   $('#english').val(result[0].english);
   $('#science').val(result[0].science);
   $('#social').val(result[0].social);
-
+  $('#total').val(result[0].average * 4);
     $('#average').val(result[0].average);
-
+    $('#grade').val(calcGrade(result[0].average));
+   
 
 });
   }
 
+function calcGrade (grade) {
+if (grade < 60 ) {
+  return "F"
+}else if (grade < 70) {
+  return "D"
+}else if (grade < 80) {
+  return "C"
+}else if (grade < 90) {
+  return "B"
+}else {return "A"}
 
+}
 
 
 
