@@ -1,4 +1,4 @@
-function runTableQuery() {
+function runStudentQuery() {
     var queryString = new Array();
 var data;
 
@@ -77,4 +77,4 @@ $("#add-btn").on("click", function(event) {
 
     }
 
-  runTableQuery();
+  runStudentQuery();

@@ -1,0 +1,59 @@
+.form-control:hover{
+background-color:#8ec2b1 ;
+text-shadow: 1px 1px rgb(235, 232, 232);
+}
+
+
+
+/* style for home and all student navbar */
+.btn-all:hover{
+    background-color: #8ec2b1;
+    text-shadow: 1px 1px rgb(235, 232, 232);
+    
+}
+/* background color for buttons */
+.btn-all{
+    background-color: #457b9d;
+    color: #282b28;
+}
+/* background color for jumbotron */
+.backgr-color{
+    background-color:#8ec2b1 
+}
+
+/* background color for all student */
+#back-style{
+    background-color:#8ec2b1 ;
+
+}
+/* colors for firstname and last anem in adminadd.html */
+.label-color{
+    color: #282b28;
+    text-shadow: 1px 1px #457b9d;
+}
+.backg-color{
+    background-color: #faf3dd;
+}
+.font-style{
+    color: #282b28; 
+    
+}
+/* background color for student Marks in update.html  */
+#backStu-style{
+    background-color:#8ec2b1 ;
+}
+/* give style to fonts in all.js by adding class */
+.fontBack-style{
+    color:#457b9d;
+    font-family: 'Assistant', sans-serif;
+    text-shadow: 2px 1px rgb(235, 232, 232);
+    background-color: #faf3dd;
+    
+    
+}
+/* give style to buttons in all.js by adding class * */
+.btn-color{
+
+background-color: #8ec2b1;
+    text-shadow: 2px 1px rgb(235, 232, 232);
+}
