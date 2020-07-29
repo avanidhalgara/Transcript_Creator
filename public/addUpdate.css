@@ -46,8 +46,9 @@ text-shadow: 1px 1px rgb(235, 232, 232);
 .fontBack-style{
     color:#457b9d;
     font-family: 'Assistant', sans-serif;
-    text-shadow: 2px 1px rgb(235, 232, 232);
+    text-shadow: 1px 1px #264653;
     background-color: #faf3dd;
+    font-weight: normal;
     
     
 }
@@ -55,22 +56,23 @@ text-shadow: 1px 1px rgb(235, 232, 232);
 .btn-color{
 
     background-color:#457b9d; 
-    text-shadow: 1px 1px rgb(235, 232, 232);
-    color:#03045e;
+    text-shadow: 1px 1px black;
+    color:white;
 }
 /* giving colors to the homecontact navbar */
 .btn1-all{
-    color:#03045e;
-    text-shadow: 1px 1px rgb(235, 232, 232);
+    color:white;
+    text-shadow: 1px 1px black;
   }
 .font-size{
     font-size: 1.7rem;
 }
 /* give stylr navbar on transcript */
-#btn-create{
+#btn-create {
     background-color:#457b9d; 
-    text-shadow: 0.5px 0.5px rgb(235, 232, 232);
-    color:#03045e;
+    text-shadow: 1px 1px black;
+    color:white;
+   
     
 }
 /* give background color on navbar on transcript */
@@ -80,6 +82,6 @@ text-shadow: 1px 1px rgb(235, 232, 232);
 /* give style admin.html navabr
  */
  .fontcolor{
-    color:#03045e;
-    text-shadow: 0.5px 0.5px rgb(235, 232, 232);
+    color:white;
+    text-shadow: 1px 1px black;
  }
