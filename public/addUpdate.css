@@ -54,14 +54,32 @@ text-shadow: 1px 1px rgb(235, 232, 232);
 /* give style to buttons in all.js by adding class * */
 .btn-color{
 
-background-color: #8ec2b1;
-    text-shadow: 2px 1px rgb(235, 232, 232);
+    background-color:#457b9d; 
+    text-shadow: 1px 1px rgb(235, 232, 232);
+    color:#03045e;
 }
 /* giving colors to the homecontact navbar */
 .btn1-all{
     color:#03045e;
-    text-shadow: 2px 1px rgb(235, 232, 232);
+    text-shadow: 1px 1px rgb(235, 232, 232);
   }
 .font-size{
     font-size: 1.7rem;
 }
+/* give stylr navbar on transcript */
+#btn-create{
+    background-color:#457b9d; 
+    text-shadow: 0.5px 0.5px rgb(235, 232, 232);
+    color:#03045e;
+    
+}
+/* give background color on navbar on transcript */
+.backgro-col{
+    background-color:#457b9d;   
+}
+/* give style admin.html navabr
+ */
+ .fontcolor{
+    color:#03045e;
+    text-shadow: 0.5px 0.5px rgb(235, 232, 232);
+ }
