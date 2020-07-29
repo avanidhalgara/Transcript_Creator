@@ -31,7 +31,7 @@ module.exports = function(sequelize, DataTypes) {
         field:'Average',
         type: DataTypes.VIRTUAL,
        get(){
-         return (this.maths+this.science+this.social+this.english)/4
+         return (parseFloat(this.maths)+ parseFloat(this.science)+ parseFloat(this.social)+parseFloat(this.english))/4
        },
        set(){
          throw new Error("Do not try to set the average value!")

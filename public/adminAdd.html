@@ -9,83 +9,95 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="/addUpdate.css" rel="stylesheet">
 
 </head>
 
 <body>
 
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron backgr-color">
       <!-- <h1>Star Wars Express</h1>
       <h3>The greatest resource in the galaxy for Star Wars statistics!</h3>
       <hr> -->
-      <a href="home.html" class="btn btn-danger btn-lg">
+      <a href="home.html" class="btn  btn-lg btn-all">
         <span class="fa fa-home"></span> Home</a>
-      <a href="/all" class="btn btn-danger btn-lg">
+      <a href="/all" class="btn  btn-lg btn-all ">
         <span class="fa fa-th-list"></span> All Students</a>
     </div>
     <div class="row">
 
       <div class="col-lg-12">
 
-        <div class="card">
-          <div class="card-header">
+        <div class="card background-color">
+          <div class="card-header form-control font-weight-bold"id=back-style>
             Add Students
           </div>
           <div class="card-body">
             <form action="" method="POST" role="form">
 
               <div class="form-group">
-                <label for="">First Name</label>
+                <label class="label-color" for="">First Name</label>
                 <input type="text" class="form-control" id="first-name" placeholder="">
               </div>
 
               <div class="form-group">
-                <label for="">Last Name</label>
+                <label class="label-color for="">Last Name</label>
                 <input type="text" class="form-control" id="last-name" placeholder="">
               </div>
               <div class="form-group">
-                <label for="">Parent Name</label>
+                <label class="label-color for="">Parent Name</label>
                 <input type="text" class="form-control" id="parent-name" placeholder="">
               </div>
               <div class="form-group">
-                <label for="">Email Address</label>
+                <label class="label-color for="">Email Address</label>
                 <input type="text" class="form-control" id="email-address" placeholder="">
               </div>
 
               <div class="form-group">
-                <label for="">Class Level</label>
+                <label class="label-color for="">Class Level</label>
                 <input type="text" class="form-control" id="class-level" placeholder="">
               </div>
               <div class="form-group">
-                <label for="">Enroll Status</label>
+                <label class="label-color for="">Enroll Status</label>
                 <input type="text" class="form-control" id="enroll-status" placeholder="">
               </div>
               <div class="form-group">
-                <label for="">Enroll Year</label>
+                <label class="label-color for="">Enroll Year</label>
                 <input type="text" class="form-control" id="enroll-year" placeholder="">
               </div>
               <div class="form-group">
-                <label for="">Phone Number</label>
+                <label class="label-color for="">Phone Number</label>
                 <input type="text" class="form-control" id="phone-number" placeholder="">
               </div>              
               <div class="form-group">
-                <label for="">Address</label>
+                <label class="label-color for="">Address</label>
                 <input type="text" class="form-control" id="address" placeholder="">
               </div>
 
             </form>
             <br>
             <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn">
+              <button type="submit" class="btn btn-primary btn-md btn-all" id="add-btn">
                 <span class="fa fa-fire"></span> Add Student</button>
             </div>
+            
+            
           </div>
         </div>
 
       </div>
     </div>
   </div>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a class="font-style" href="#">Back to top</a>
+      </p>
+      <p>Pioneer Academy @copyright<i class="fa fa-copyright" aria-hidden="true"></i></p>
+      <p>Intrested? <a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.</p>
+    </div>
+  </footer>
 
   <script src="js/add.js" type="text/javascript"></script>
 

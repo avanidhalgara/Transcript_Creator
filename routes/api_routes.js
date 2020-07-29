@@ -17,6 +17,16 @@ module.exports = function(app) {
     console.log(req.body);
     
     db.Student.create(req.body)
+        .then(results=>{
+          let marks ={
+         english: 0,
+        StudentId:results.id,
+        maths: 0,        
+        science: 0,        
+        social: 0,
+          }
+           return db.Marks.create(marks)
+        })
         .then(results=>res.json(results)) 
         .catch(err=>res.json(err))
       

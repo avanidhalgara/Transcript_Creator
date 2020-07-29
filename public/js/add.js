@@ -11,7 +11,7 @@ $("#add-btn").on("click", function(event) {
       // last name from lastName input
       lastname: $("#last-name").val().trim(),
       //  parent name from parentName input
-      parentName: $("#parent-name").val().trim(),
+      parentname: $("#parent-name").val().trim(),
       // email address from emailAddress input
       emailaddress: $("#email-address").val().trim(),
       // class level frol classLevel input
@@ -33,8 +33,9 @@ $("#add-btn").on("click", function(event) {
       .then(function(data) {
         // log the data we found
         console.log(data);
-        // tell the user we're adding a character with an alert window
+        // tell the user we're adding a student with an alert window
         alert("Adding Student...");
+        window.location.href ="/adminUpdate.html?id="+data.StudentId
       });
   
     // empty each input box by replacing the value with an empty string
