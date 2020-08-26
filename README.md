@@ -22,11 +22,11 @@ an option for admin to login
 Graphic functionality can be incorporated to track progress
 an option to print transcript in pdf format
 
-
+ # Screenshot
+ ![image](https://user-images.githubusercontent.com/65205190/91343038-86784000-e7a1-11ea-9456-5bfb2f2c382c.png)
 
 
 [GitHub Repo]()
 
 [Deployed Web Application]()
-
-![Homepage of Deployed Site](.png)
+https://still-garden-49563.herokuapp.com/
